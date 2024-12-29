@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #222;
+    color: #fff;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card {
+    width: 90%;
+    max-width: 470px;
+    background: linear-gradient(135deg, #00feba, #5b548a);
+    color: #fff;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.7);
+}
+
+.search {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.search input {
+    padding: 10px;
+    border: none;
+    border-radius: 10px 0 0 10px;
+    outline: none;
+    width: 70%;
+    font-size: 1rem;
+    color: #333;
+    background-color: #fff;
+    box-shadow: inset 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.search button {
+    padding: 10px;
+    border: none;
+    border-radius: 0 10px 10px 0;
+    background: #333;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1rem;
+    transition: background 0.3s ease-in-out;
+}
+
+.search button:hover {
+    background: #555;
+}
+
+.weather-icon {
+    width: 100px;
+    margin: 20px 0;
+}
+
+.temp {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+.city {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.details .col {
+    text-align: center;
+}
+
+.details img {
+    width: 40px;
+    margin-bottom: 10px;
+}
+
+.details p {
+    font-size: 1rem;
+    color: #aaa;
+    margin-top: 5px;
+}
+
+@media (max-width: 600px) {
+    .card {
+        padding: 30px 20px;
+    }
+
+    .search input {
+        font-size: 0.9rem;
+        padding: 8px 10px;
+    }
+
+    .search button {
+        font-size: 0.9rem;
+        padding: 8px 15px;
+    }
+
+    .temp {
+        font-size: 2rem;
+    }
+
+    .city {
+        font-size: 1.2rem;
+    }
+
+    .details {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .details .col {
+        margin-bottom: 20px;
+    }
+
+    .details img {
+        width: 50px;
+    }
+}
